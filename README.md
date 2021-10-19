@@ -1,5 +1,5 @@
 # Elevator Manager demo application
-Elevator Manager is a Java based, Spring boot REST web server application that provides resources for obtaining Elevators status information in a given Building, as well as for modifying the Elevators' current weight and current floor status within a given set of constraints.
+Elevator Manager is a Java based, Spring boot REST web service application that provides resources for obtaining Elevators status information in a given Building, as well as for modifying the Elevators' current weight and current floor status within a given set of constraints.
 
 ### Building and running the application
 
@@ -18,8 +18,8 @@ mvn clean install
 ### Resources and compatible operations
 - Resource: **`<tomcat_base_url>/ElevatorManager/elevators/{denomination}`**
 
-  - **GET**: This request will serve the client with a JSON representation of the requested Elevator, with the given *{denomination}*.
-  - **PATCH**: This request will allow the client to update the status of a given Elevator. Only *currentWeight* and *currentFloor* attributes can be altered.
+  - **HTTP GET**: This request will serve the client with a JSON representation of the requested Elevator, with the given *{denomination}*.
+  - **HTTP PATCH**: This request will allow the client to update the status of a given Elevator. Only *currentWeight* and *currentFloor* attributes can be altered.
 
 ### Usage notes
 * Some elevators have weight and floor accessibility restrictions. 
